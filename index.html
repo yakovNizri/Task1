@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="containerForm">
+        <h2>Add Product</h2>
+        <form id="formProduct">
+            <label for="nameP">name product</label>
+            <input type="text" id="nameP" placeholder="Enter name product" required><br>
+            <label for="priceP">price product</label>
+            <input type="text" id="priceP" placeholder="Enter price" required><br>
+            
+            <label for="optionP">category product</label>
+            <select name="" id="optionP" required>
+                <option value="" selected hidden disabled>Select a category</option>
+                <option value="Drinks">Drinks</option>
+                <option value="Meat">Meat</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Basic">Basic</option>
+            </select><br>
+            
+            <label for="linkImageP">link image product</label>
+            <input type="text" id="linkImageP" placeholder="Enter link image" required><br>
+
+            <input type="submit" value="Add product" onclick="addProduct(event);" id="submit">
+        </form>
+    </div>
+
+    <div id="containerTable">
+        <h2>My Card</h2>
+        <table id="tableProduct">
+            <tr>
+                <th>Product_name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>image</th>
+                <th>actions</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
