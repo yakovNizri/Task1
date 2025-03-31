@@ -39,7 +39,7 @@ function addProduct(e){
         formProduct.reset();
     }
     else{
-        alert("יש להזין את כל פרטי המוצר");
+        alert("The fields are invalid.");
     }
 }
 
