@@ -15,7 +15,7 @@ function addProduct(e){
     butDelete.style.color = 'red';
 
     const arrProduct = [nameProduct.value, Number(priceProduct.value), optionProduct.value, linkImageProduct.value, butDelete]; 
-    if(arrProduct[0] && (arrProduct[1] !== 0 && isNaN(priceProduct.value) === false) && arrProduct[2] && arrProduct[3]){
+    if(arrProduct[0].trim() && (arrProduct[1] !== 0 && isNaN(priceProduct.value) === false) && arrProduct[2] && arrProduct[3].trim()){
         const createTR = document.createElement('tr');
         const createImage = document.createElement('img');
         arrProduct.forEach((element, index) => {
